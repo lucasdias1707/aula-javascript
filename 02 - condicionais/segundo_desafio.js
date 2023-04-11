@@ -1,4 +1,4 @@
-/* Faça um programa para calcumar o valor de uma viagem.
+/* Faça um programa para calcular o valor de uma viagem.
 
 Você terá 5 variáveis. Sendo elas:
  1 - Preço do etanol;
@@ -9,12 +9,17 @@ Você terá 5 variáveis. Sendo elas:
 
 Imprima no console o valor que será gasto para realizar esta viagem. */
 
-const precoCombustivel = 5.49;
+const tipoCombustivel = 'etanol';
 const precoEtanol = 5.29;
-const tipoCombustivel = etanol;
+const precoGasolina = 5.49;
 const kmPorLitro = 10;
 const distanciaEmKm = 539;
-
 const litrosConsumidos = distanciaEmKm / kmPorLitro;
-const valorGasto = litrosConsumidos * precoCombustivel;
-console.log(valorGasto.toFixed(2));
+
+if (tipoCombustivel === 'etanol') {
+  const valorGasto = litrosConsumidos * precoEtanol;
+  console.log(valorGasto.toFixed(2));
+} else {
+  const valorGasto = litrosConsumidos * precoGasolina;
+  console.log(valorGasto.toFixed(2));
+}
