@@ -15,7 +15,6 @@
     - Acima de 40 Obesidade grave;
 */
 
-
 function calcularIMC(peso, altura) {
     return peso / Math.pow(altura, 2);
 }
