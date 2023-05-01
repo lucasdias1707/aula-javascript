@@ -1,7 +1,17 @@
-const alunos = ['1','2','3'];
+const notas = [];
 
-console.log(alunos)
+notas.push(10);
+notas.push(10);
+notas.push(5);
 
-console.log(alunos.pop());
+let soma = 0;
 
-console.log(alunos)
+for (let i = 0; i < notas.length; i++) {
+  const nota = notas[i];
+  soma = soma + nota;
+}
+const media = soma / notas.length;
+console.log(media);
+
+// console.log(alunos.pop()); // .pop remove a última informação do array
+// console.log(alunos.shift()); // .shift remove a primeira informação do array
